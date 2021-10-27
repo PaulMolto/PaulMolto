@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+	<meta charset="utf-8">
+	<title>Paul Molto</title>
+	<link rel="stylesheet" type="text/css" href="cssnav.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+
+
+</head>
+
+<body>
+	<nav>
+		<div class="logo">
+			<a href="nav.html"><h4>The nav</a></h4>
+		</div>
+		<ul class="nav-links">
+			<li>
+				<a href="index.html">Restart the game</a>
+			</li>
+			<li>
+				<a href="aboutme.html">About me</a>
+			</li>
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+		</ul>
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+
+	</nav>
+
+	<div class="banner">
+		<video autoplay muted loop> 
+			<source src="images/aerial.mp4" type="video/mp4">
+		</video>
+		<h2>WELCOME</h2>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="app.js"></script>
+	
+	<div id="progressbar"></div>
+	<div id="scrollPath"></div>
+
+	<script type="text/javascript">
+		let progress = document.getElementById('progressbar')
+		let totalHeight = document.body.scrollHeight - window.innerHeight; 
+		window.onscroll = function(){
+			let progressHeight = (window.pageYOffset /totalHeight) * 100
+			progress.style.height = progressHeight + "%";
+		}
+	</script>
+
+</body>
+
+</html>

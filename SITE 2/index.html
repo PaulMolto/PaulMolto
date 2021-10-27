@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Profile of this amazing Paul Molto</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="cssindex.css">
+	<script src="https://kit.fontawesome.com/2a8ebd816c.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+	<div id="progressbar"></div>
+	<div id="scrollPath"></div>
+
+
+	<h2 id="Characters"> PLEASE, SELECT YOUR CHARACTERS </h2>
+	<div class="box1" id="Musk">
+		<div class="imgBx">
+			<a href="https://fr.wikipedia.org/wiki/Elon_Musk" target="_blank"> <img src="images/elonmusk.jpg">
+		</div>
+		<div class="content">
+			<h2>Elon Musk<br><span>CEO Space X & CEO Tesla</span></h2>
+		</div>
+	</div>
+
+	<div class="box1" id="molto">
+		<div class="imgBx">
+			<a href="nav.html" target="_blank"> <img src="images/photodeprofil.png">
+		</div>
+		<div class="content">
+			<h2>Paul Molto <br><span>Kedge student</span></h2></a>
+		</div>
+	</div>
+
+	<div class="box1" id="potter">
+		<div class="imgBx">
+			<a href="https://harrypotter.fandom.com/fr/wiki/Harry_Potter" target="_blank"> <img src="images/harrypotter.jpg">
+		</div>
+		<div class="content">
+			<h2>Harry Potter<br><span>Hogwarts School of Witchcraft and Wizardry</span></h2>
+			</a>
+		</div>
+	</div>
+	
+
+<div class="box2">
+
+		<h2> Rules </h2>
+		<p> Hi, [player]! What's going on today ? I wanted to share something with you, the profile of a strange player called Paul Molto.
+		I hope this isn't presumptuous, but I think you could use your mouse for learn more things about him. Click on his head! </p>
+	</div>
+	
+	
+</div> 
+	
+
+
+<script type="text/javascript">
+		let progress = document.getElementById('progressbar')
+		let totalHeight = document.body.scrollHeight - window.innerHeight; 
+		window.onscroll = function(){
+			let progressHeight = (window.pageYOffset /totalHeight) * 100
+			progress.style.height = progressHeight + "%";
+		}
+</script>
+
+<a href=""></a>
+
+</body>
+</html>

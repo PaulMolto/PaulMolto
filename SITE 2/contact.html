@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+	<meta charset="utf-8">
+	<title>Paul Molto</title>
+	<link rel="stylesheet" type="text/css" href="csscontact.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+
+
+</head>
+
+<body>
+	<nav>
+		<div class="logo">
+			<a href="nav.html"><h4>The nav</a></h4>
+		</div>
+		<ul class="nav-links">
+			<li>
+				<a href="index.html">Restart the game</a>
+			</li>
+			<li>
+				<a href="aboutme.html">About me</a>
+			</li>
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+		</ul>
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</nav>
+
+		<div id="fichesociete">
+			<h1>How to contact me ?</h1>
+
+			<h2> Phone : 
+				<li> 07.81.30.00.37</li>
+			</h2>
+			<h2> E-mail : 
+				<li> paul.molto@kedgebs.com</li>
+			</h2>
+			<h2> Mail to my address : 
+				<li> Paul Molto</li>
+				<li> 83 boulevard du redon</li>
+				<li> bat A</li>
+				<li> 13009 Marseille</li>
+		</div>
+
+		<div class="container">
+	<div class="row">
+			<h1>Leave your message here </h1>
+	</div>
+	<div class="row">
+			<h4 style="text-align:center">I'd love to hear from you!</h4>
+	</div>
+
+	<div class="row input-container">
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" required />
+					<label>Name</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input">
+					<input type="text" required />
+					<label>Email</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input" style="float:right;">
+					<input type="text" required />
+					<label>Phone number</label> 
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<textarea required></textarea>
+					<label>Message</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="btn-lrg submit-btn">Send</div>
+			</div>
+	</div>
+</div>
+
+
+
+
+		<div id="Map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2905.874810303476!2d5.419202315484857!3d43.25404547913698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1633183183777!5m2!1sfr!2sfr" width="600" height="450" style="border:2;" allowfullscreen="" loading="lazy"></iframe>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="app.js"></script>
+	
+	<div id="progressbar"></div>
+	<div id="scrollPath"></div>
+
+	<script type="text/javascript">
+		let progress = document.getElementById('progressbar')
+		let totalHeight = document.body.scrollHeight - window.innerHeight; 
+		window.onscroll = function(){
+			let progressHeight = (window.pageYOffset /totalHeight) * 100
+			progress.style.height = progressHeight + "%";
+		}
+	</script>
+
+</body>
+</html>
+
